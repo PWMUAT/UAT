@@ -1,0 +1,59 @@
+<!--Pierson McInelly 06/18/2023-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!--Header section-->
+    <header>
+        <h1>Strings Practice</h1>
+    </header>
+    <!--Form for putting in names-->
+    <form action="/" method="GET">
+        <!--First name entry box-->
+        <input id="firstname"
+            type="text"
+            name="firstname"
+            placeholder="First Name"
+            required
+        />
+        <br>
+        <!--Last name entry box-->
+        <input id="lastname"
+            type="text"
+            name="lastname"
+            placeholder="Last Name"
+            required
+        />
+        <br>
+        <!--Zip code entry box-->
+        <input id="zipcode"
+        type="text"
+        name="zipcode"
+        placeholder="Zip Code"
+        required
+        />
+        <br>
+
+        <p id="errorMessage" hidden></p>
+        <input type="submit" value="SUBMIT"/>
+    </form>
+    <!--Footer for assignment info-->
+    <footer>
+        <br>
+        Pierson McInelly
+        <br>
+        University of Advancing Technology
+        <br>
+        2625 W Baseline Rd.
+        <br>
+        Tempe, Azz 85283
+    </footer>
+</body>
+<!--Script is below content so javascript doesnt get null elements-->
+<script src="strings.js"></script>
+</html>
