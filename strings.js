@@ -44,3 +44,45 @@ form.addEventListener("submit", (e) => {
         alert("Hello " + fullName + "!"); 
     }
 });
+
+function isPalindrome(strToTest) {
+    /*remove all spaces using replace(/\s/g, "")
+    and lowercase everything using toLowerCase */
+    var strCleaned = strToTest.replace(/\s/g, "").toLowerCase();
+
+    //string -> array -> reverse array -> string
+    var strRev = strCleaned.split("").reverse().join("");
+
+    //return if strings are equal or not
+    return strRev == strCleaned;
+}
+
+var bContinue = true;
+do{ 
+    //prompt for word
+    var userInput = prompt("Enter word to test for a Palindrome");
+
+    //storing input
+    var isPalind = isPalindrome(userInput);
+
+    //empty message variable for later
+    var message = "";
+
+    //determine if input is a palindrome or not
+    if(isPalind) {
+        message = userInput + " is a Palindrome."
+    }
+    else {message = userInput + " is not a Palindrome."}
+
+    //alert user of outcome
+    alert(message);
+
+    //prompt user for another go
+    var answer = prompt("Enter another word? (y/n)");
+
+    //break loop if user says no
+    if(answer.toLowerCase() == "n") {
+        bContinue = false;
+    }
+
+} while(bContinue);
