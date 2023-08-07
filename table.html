@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Hours Table</title>
+    <link rel="stylesheet" href="main.css">
+
+    <!--Html style-->
+    <style>
+        /*Centering HEader*/
+        h1 {
+            text-align: center;
+        }
+
+        /*Overall table style*/
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 16pt;
+        }
+
+        /*Table header styles*/
+        th {
+            background-color: rgb(56, 56, 56);
+            font-weight: bold;
+            padding: 12px;
+            text-align: center;
+            border-bottom: 2px solid gray;
+        }
+
+        /*Table data row styles*/
+        td {
+            padding: 10px;
+            border-bottom: 1px solid black;
+        }
+        
+        /*Alternating row colors*/
+        tr:nth-child(odd) {
+            background-color: rgb(85, 85, 85);
+        }
+    </style>
+</head>
+<body>
+    <!--Header-->
+    <h1>Video Game Hours Played</h1>
+
+    <!--Hard coded table data-->
+    <table>
+        <!--Table Header-->
+        <tr>
+            <!--Column titles-->
+            <th>Name</th>
+            <th>Hours Played</th>
+            <th>Available Platform(s)</th>
+        </tr>
+        <!--Data rows-->
+        <tr>
+            <!--Data columns-->
+            <td>Warframe</td>
+            <td>3,225.5</td>
+            <td>PC, Xbox, Playstation, Switch</td>
+        </tr>
+        <tr>
+            <td>VRChat</td>
+            <td>1,351.8</td>
+            <td>PC, Quest</td>
+        </tr>
+        <tr>
+            <td>Elite: Dangerous</td>
+            <td>489.6</td>
+            <td>PC, Xbox, Playstation</td>
+        </tr>
+        <tr>
+            <td>Star Citizen</td>
+            <td>308.9</td>
+            <td>PC</td>
+        </tr>
+    </table>
+</body>
+</html>
