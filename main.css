@@ -1,6 +1,8 @@
 body{
     background-color: rgb(66, 69, 73);
     color: white;
+    justify-content: center;
+    align-items: center;
 }
 h1{
     font-family:'Courier New', Courier, monospace;
@@ -19,8 +21,62 @@ footer{
     margin-right: 200px;*/
 }
 #IndexMeme{
-    margin-right: 200px;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    width: 500px;
+
 }
 header{
     text-align: center;
+}
+h1{
+    text-align: center;
+}
+/*
+form{
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(46, 48, 51);
+    border-radius: 10px;
+    width: 350px;
+}
+*/
+form input{
+    display: block;
+    margin: 1px auto;
+    padding: 3px;
+    text-align: center;
+    border-radius: 2px;
+}
+p {
+    justify-content: center;
+    text-align: center;
+}
+
+/*style for overall menu*/
+.menu {
+    background-color: maroon;
+    overflow: hidden;
+}
+/*style for menu entries*/
+.menu a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3x ease;
+}
+/*style for entry hovers*/
+.menu a:hover {
+    background-color: rgb(120, 0, 0);
+    color: white;
+}
+/*style for entry active display*/
+.menu a.active {
+    background-color:  rgb(70, 0, 0);
+    color: lightgray;
 }
